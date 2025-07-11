@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vintage Photobooth</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📸 Vintage Photobooth</h1>
+    <video id="video" autoplay playsinline></video>
+
+    <div class="filters">
+      <button onclick="applyFilter('none')">Normal</button>
+      <button onclick="applyFilter('grayscale(1)')">Grayscale</button>
+      <button onclick="applyFilter('sepia(1)')">Sepia</button>
+      <button onclick="applyFilter('saturate(0.4) hue-rotate(330deg)')">Vintage</button>
+      <button onclick="applyFilter('contrast(2)')">High Contrast</button>
+    </div>
+
+    <button id="snap">📷 Take Photo</button>
+    <p id="counter"></p>
+
+    <canvas id="stripCanvas" width="320" height="960"></canvas>
+    <button id="download">📥 Download Strip</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f7f1e3 url('https://i.imgur.com/XgL6CZZ.png') repeat;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: #fff5e1;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+h1 {
+  font-family: 'Special Elite', cursive;
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #5b2c06;
+}
+
+video {
+  width: 100%;
+  max-height: 300px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background: #000;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.filters button,
+#snap,
+#download {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #ffbe76;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.filters button:hover,
+#snap:hover,
+#download:hover {
+  background: #ff9f43;
+}
+
+canvas {
+  margin-top: 20px;
+  border: 8px solid #3e3e3e;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 0 12px rgba(0,0,0,0.3);
+}
+
+#counter {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #6c5ce7;
+}
+
+/* Filters */
+.grayscale { filter: grayscale(1); }
+.sepia { filter: sepia(0.8); }
+.vintage { filter: sepia(0.5) contrast(1.1) brightness(0.9); }
+.contrast { filter: contrast(1.5); }
